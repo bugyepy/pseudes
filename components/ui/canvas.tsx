@@ -103,7 +103,7 @@ const CanvasComponent = ({ image, handlePestedUrlChange }: ImageProps) => {
           x={13}
           y={32}
           fontSize={18}
-          fontFamily={"Calibri"}
+          fontFamily={"Carlito"}
           fill="white"
         />
       </Layer>
