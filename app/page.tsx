@@ -46,7 +46,7 @@ export default function Home() {
   const handleClose = () => {
     setIsOpen(false);
     setImage(undefined);
-    setPestedUrl(null)
+    setPestedUrl(null);
 
     if (inputRef.current) {
       inputRef.current.value = "";
@@ -63,7 +63,7 @@ export default function Home() {
     link.click();
     document.body.removeChild(link);
 
-    setPestedUrl(null)
+    setPestedUrl(null);
   };
 
   return (
@@ -71,9 +71,35 @@ export default function Home() {
       <h1 className="pb-2 text-4xl font-bold">
         Pseudes - Pesting for quickly.
       </h1>
-      <h2 className="pb-8 text-xl font-semibold">
+      <h2 className="pb-2 text-xl font-semibold">
         安心で安全。完全に無料。サーバに画像は保存されません。
       </h2>
+
+      <p className="pb-8 text-gray-500 dark:text-gray-400">
+        Next.jsによるCanvas Demoサイト。デプロイにはVercelを利用している。
+        <a
+          href="https://github.com/bugyepy/pseudes"
+          className="inline-flex items-center font-medium text-blue-600 dark:text-blue-500 hover:underline"
+        >
+          詳細はGitHubで
+          <svg
+            className="w-4 h-4 ms-2 rtl:rotate-180"
+            aria-hidden="true"
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 14 10"
+          >
+            <path
+              stroke="currentColor"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M1 5h12m0 0L9 1m4 4L9 9"
+            />
+          </svg>
+        </a>
+      </p>
+
       <Dialog open={isOpen} onOpenChange={handleOpenChange}>
         <DialogTrigger asChild>
           <label className="block">
