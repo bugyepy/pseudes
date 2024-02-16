@@ -1,6 +1,6 @@
 # Pseudes
 
-[https://pseudes.vercel.app](<https://pseudes.vercel.app>
+[https://pseudes.vercel.app](https://pseudes.vercel.app)
 
 読み込んだ画像にウォーターマークを合成するだけのWebアプリケーション。Next.jsとKonvaを使ってCanvasでレンダリングしている。
 
