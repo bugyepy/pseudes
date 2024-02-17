@@ -66,12 +66,12 @@ export default function Home() {
   };
 
   return (
-    <main className="flex align-items justify-center min-h-screen p-24 bg-[url('/background.png')]">
-      <section className="p-24 bg-white rounded-50 rounded-lg border-8 border-black">
-        <h1 className="pb-2 text-4xl font-bold">
+    <main className="flex align-items justify-center min-h-screen p-8 md:p-14 bg-[url('/background.png')]">
+      <section className="p-4 md:p-14 bg-white rounded-50 rounded-lg border-8 border-black">
+        <h1 className="pb-2 text-2xl md:text-4xl font-bold">
           Pseudes - Pesting for quickly.
         </h1>
-        <h2 className="pb-2 text-xl font-semibold">
+        <h2 className="pb-2 text-lg md:text-xl font-semibold">
           安心で安全。完全に無料。サーバに画像は保存されません。
         </h2>
 
@@ -81,7 +81,7 @@ export default function Home() {
             href="https://github.com/bugyepy/pseudes"
             className="inline-flex items-center font-medium text-blue-600 dark:text-blue-500 hover:underline"
           >
-            詳細はGitHubで
+            詳細はGitHub
             <svg
               className="w-4 h-4 ms-2 rtl:rotate-180"
               aria-hidden="true"
